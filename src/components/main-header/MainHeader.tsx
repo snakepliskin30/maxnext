@@ -20,7 +20,6 @@ const nav = [
 
 const MainHeader = () => {
   const path = usePathname();
-  console.log('path', path);
 
   return (
     <>
