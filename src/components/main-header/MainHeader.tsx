@@ -11,7 +11,7 @@ const nav = [
   },
   {
     href: '/community',
-    label: 'Foodies Commnunity',
+    label: 'Foodies Community',
   },
 ];
 
