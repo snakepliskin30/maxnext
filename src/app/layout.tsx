@@ -1,8 +1,12 @@
-import { Inter } from 'next/font/google';
+import { Inter, Montserrat } from 'next/font/google';
 import './globals.css';
 import MainHeader from '@/components/main-header/MainHeader';
 
 const inter = Inter({ subsets: ['latin'] });
+const lobster = Montserrat({
+  subsets: ['latin'],
+  variable: '--font-montserrat',
+});
 
 export const metadata = {
   title: 'NextLevel Food',
@@ -16,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body>
+      <body className={`${lobster.variable}`}>
         <MainHeader />
         {children}
       </body>

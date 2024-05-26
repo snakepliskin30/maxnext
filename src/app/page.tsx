@@ -10,7 +10,7 @@ export default function Home() {
         </div>
         <div className='space-y-4'>
           <div className='text-[#ddd6cb] text-2xl space-y-2'>
-            <h1 className='text-[2rem] font-bold tracking-[0.15rem] uppercase bg-gradient-to-t from-[#f9572a] to-[#ffc905] bg-clip-text text-transparent text-balance'>
+            <h1 className='font-montserrat text-[2rem] font-bold tracking-[0.15rem] uppercase bg-gradient-to-t from-[#f9572a] to-[#ffc905] bg-clip-text text-transparent text-balance'>
               NextLevel Food for NextLevel Foodies
             </h1>
             <p>Taste & share food from all over the world.</p>
@@ -31,7 +31,7 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <main className='flex flex-col gap-8'>
+      <main className='flex flex-col gap-8 font-montserrat'>
         <section className='flex flex-col gap-6 text-[#ddd6cb] text-2xl max-w-[50rem] w-[90%] my-8 mx-auto text-center text-balance'>
           <h2>How it works</h2>
           <p>

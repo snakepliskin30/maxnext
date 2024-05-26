@@ -1,11 +1,8 @@
-'use client';
-
 import Link from 'next/link';
 import logoImg from '@/assets/logo.png';
-import { cn } from '@/lib/utils';
-import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import MainHeaderBackground from './MainHeaderBackground';
+import NavLink from './NavLink';
 
 const nav = [
   {
@@ -19,15 +16,13 @@ const nav = [
 ];
 
 const MainHeader = () => {
-  const path = usePathname();
-
   return (
     <>
       <MainHeaderBackground />
       <header className='flex justify-between items-center py-8 px-4 md:py-4 md:px-[10%]'>
         <Link
           href='/'
-          className='flex items-center justify-center gap-8 text-[#ddd6cb] font-bold tracking-[.15rem] uppercase text-2xl'
+          className='flex items-center justify-center gap-8 text-[#ddd6cb] font-bold tracking-[.15rem] uppercase text-2xl font-montserrat'
         >
           <Image
             src={logoImg}
@@ -41,18 +36,7 @@ const MainHeader = () => {
           <ul className='flex gap-[1.5rem] text-xl'>
             {nav.map((e) => (
               <li key={e.href}>
-                <Link
-                  href={e.href}
-                  className={cn(
-                    'text-[#ddd6cb] font-semibold py-2 px-4 rounded-lg hover:bg-gradient-to-t hover:from-[#ff8a05] hover:to-[#f9b331] hover:shadow-xl hover:text-transparent hover:bg-clip-text',
-                    {
-                      'bg-gradient-to-t from-[#ff8a05] to-[#f9b331] shadow-xl text-transparent bg-clip-text':
-                        path === e.href,
-                    },
-                  )}
-                >
-                  {e.label}
-                </Link>
+                <NavLink {...e} />
               </li>
             ))}
           </ul>
