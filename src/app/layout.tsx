@@ -3,7 +3,7 @@ import './globals.css';
 import MainHeader from '@/components/main-header/MainHeader';
 
 const inter = Inter({ subsets: ['latin'] });
-const lobster = Montserrat({
+const montserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font-montserrat',
 });
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${lobster.variable}`}>
+      <body className={`${montserrat.variable}`}>
         <MainHeader />
         {children}
       </body>
