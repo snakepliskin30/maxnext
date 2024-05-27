@@ -16,6 +16,12 @@ const config: Config = {
       fontFamily: {
         montserrat: ['var(--font-montserrat)'],
       },
+      textColor: {
+        'primary-text-color': 'var(--primary-text-color)',
+      },
+      gridTemplateColumns: {
+        'meal-grid-auto-fill': 'repeat(auto-fill, minmax(20rem, 1fr))',
+      },
     },
   },
   plugins: [],
