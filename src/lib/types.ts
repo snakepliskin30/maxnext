@@ -5,6 +5,8 @@ export type Meal = {
   image: string;
   summary: string;
   creator: string;
+  instructions: string;
+  creator_email: string;
 };
 
 export type MealsGridProps = {
