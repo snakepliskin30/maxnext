@@ -1,3 +1,5 @@
+import ImagePicker from '@/components/meals/ImagePicker';
+
 const MealsSharePage = () => {
   return (
     <>
@@ -11,11 +13,11 @@ const MealsSharePage = () => {
         <p>Or any other meal you feel needs sharing!</p>
       </header>
       <main className='w-[90%] max-w-[75rem] my-12 mx-auto text-white'>
-        <form className='max-w-[50rem]'>
+        <form className='max-w-[50rem] space-y-4'>
           <div className='flex gap-4'>
             <p className='w-full'>
               <label
-                className='block mb-2 text-[1rem] font-montserrat uppercase text-[#b3aea5] font-bold'
+                className='block mb-1 text-[1rem] font-montserrat uppercase text-[#b3aea5] font-bold'
                 htmlFor='name'
               >
                 Your name
@@ -30,7 +32,7 @@ const MealsSharePage = () => {
             </p>
             <p className='w-full'>
               <label
-                className='block mb-2 text-[1rem] font-montserrat uppercase text-[#b3aea5] font-bold'
+                className='block mb-1 text-[1rem] font-montserrat uppercase text-[#b3aea5] font-bold'
                 htmlFor='email'
               >
                 Your email
@@ -46,7 +48,7 @@ const MealsSharePage = () => {
           </div>
           <p>
             <label
-              className='block mb-2 text-[1rem] font-montserrat uppercase text-[#b3aea5] font-bold'
+              className='block mb-1 text-[1rem] font-montserrat uppercase text-[#b3aea5] font-bold'
               htmlFor='title'
             >
               Title
@@ -61,7 +63,7 @@ const MealsSharePage = () => {
           </p>
           <p>
             <label
-              className='block mb-2 text-[1rem] font-montserrat uppercase text-[#b3aea5] font-bold'
+              className='block mb-1 text-[1rem] font-montserrat uppercase text-[#b3aea5] font-bold'
               htmlFor='summary'
             >
               Short Summary
@@ -76,7 +78,7 @@ const MealsSharePage = () => {
           </p>
           <p>
             <label
-              className='block mb-2 text-[1rem] font-montserrat uppercase text-[#b3aea5] font-bold'
+              className='block mb-1 text-[1rem] font-montserrat uppercase text-[#b3aea5] font-bold'
               htmlFor='instructions'
             >
               Instructions
@@ -89,7 +91,7 @@ const MealsSharePage = () => {
               required
             ></textarea>
           </p>
-          IMAGE PICKER
+          <ImagePicker label='image' name='image' />
           <p className='text-right'>
             <button
               type='submit'
